@@ -30,3 +30,28 @@ header {
     }
   }
 }
+
+.title-card {
+  height: 400px;
+  width: 50vw;
+  background-color: #689572;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: "Rammetto One", sans-serif;
+      font-size: 2.5em;
+      color: #ffffff;
+      margin: 10px;
+    }
+    h3 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: lighter;
+      font-size: 1.75em;
+      color: #ffffff;
+      margin: 10px;
+    }
+  }
+  button {
+  }
+}
