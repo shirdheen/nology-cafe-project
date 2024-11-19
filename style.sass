@@ -81,35 +81,122 @@ header .navbar__link {
 }
 
 .block-2 {
+  padding: 20px;
   font-family: "Rammetto One", sans-serif;
   text-align: center;
-  font-size: 1.5em;
   color: #faa196;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: x-large;
 }
-.block-2 .food {
-  color: #404040;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  height: 50px;
-  width: 90vw;
+
+/* Dropdown Container */
+.food .dropdown {
   background-color: #ebc9c4;
+  border: 1px solid #ebc9c4;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
-.block-2 .food .dropdown__checkbox {
+
+/* Hidden Checkbox */
+.dropdown-toggle {
   display: none;
 }
-.block-2 .food .dropdown__content {
-  height: 300px;
-  width: 33vw;
-  background-color: #ebc9c4;
+
+/* Label for Dropdown */
+.dropdown-label {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+  font-weight: bold;
 }
-.block-2 .food .dropdown__content--item img {
-  height: 200px;
-  width: 200px;
+
+/* Dropdown Icon */
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when open */
+.dropdown-toggle:checked + .dropdown-label .dropdown-icon {
+  transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  padding: 20px;
+  height: 1000px;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-top: auto;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+/* Show Content When Checkbox is Checked */
+.dropdown-toggle:checked ~ .dropdown-content {
+  display: flex;
+}
+
+/* Menu Items */
+.menu-item {
+  border: 1px solid #ebc9c4;
+  background-color: #ebc9c4;
+  padding: 15px;
+  text-align: center;
+  width: 30%;
+  height: 45%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #404040;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 10px;
+}
+
+.menu-item .dietary {
+  font-size: 0.75em;
+  font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dietary .fa-leaf {
+  color: #689572;
+  margin-right: 4px;
+}
+
+.dietary .fa-wheat-awn-circle-exclamation {
+  color: #689572;
+  margin-right: 4px;
+}
+
+.dietary .fa-egg {
+  color: #689572;
+  margin-right: 4px;
+}
+
+.dietary .fa-cow {
+  color: black;
+  margin-right: 4px;
+}
+
+.dietary-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=style.sass.map */

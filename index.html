@@ -5,99 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Pink Coffee Corner</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/89994faf41.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-
     <header>
-        <i class="fa-solid fa-mug-hot"></i>
-        <div>
-            <ul class="navbar">
-                <li class="navbar__item"><a href="#" class="navbar__link">ABOUT</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">CONTACT</a></li
-            </ul>
-        </div>
+      <i class="fa-solid fa-mug-hot"></i>
+      <div>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">ABOUT</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <section class="block-1">
-        <section class="title-card">
+        <div class="title-card">
           <div class="title-card__text">
             <h1>The Pink Coffee Corner</h1>
-            <h3> Best coffee in Melbourne</h3>
+            <h3>Best coffee in Melbourne</h3>
           </div>
-            <button>See reviews</button>
-        </section>
-        <section class="title-image">
+          <button>See reviews</button>
+        </div>
+        <div class="title-image">
           <img src="./images/hero_image.jpg" alt="hero-image" />
-        </section>
+        </div>
       </section>
 
       <section class="block-2">
         <h2>Our Menu</h2>
-        <section class="food">
+        <div class="menu">
           <div class="dropdown">
-            <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
-            <label for="dropdown-toggle" class="dropdown-label">
+            <input
+              type="checkbox"
+              id="dropdown-food-toggle"
+              class="dropdown-food-toggle"
+            />
+            <label for="dropdown-food-toggle" class="dropdown-label">
               <span class="dropdown-icon">&#9654;</span>Food
             </label>
-            <div class="dropdown-content">
+            <div class="dropdown-food-content">
               <div class="menu-item">
-                  <img src="./images/chocolate_cupcake.jpg" alt="Chocolate Cupcake">
-                  <p>Chocolate Cupcake</p>
-                  <p class="dietary">
-                    <i class="fa-solid fa-leaf"></i>
-                    Vegan</p>
+                <img
+                  src="./images/chocolate_cupcake.jpg"
+                  alt="Chocolate Cupcake"
+                />
+                <p>Chocolate Cupcake</p>
+                <p class="dietary">
+                  <i class="fa-solid fa-leaf"></i>
+                  Vegan
+                </p>
               </div>
               <div class="menu-item">
-                <img src="./images/donuts.jpg" alt="Donuts">
+                <img src="./images/donuts.jpg" alt="Donuts" />
                 <p>Donuts</p>
                 <p class="dietary">
                   <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
-                  Gluten Free</p>
+                  Gluten Free
+                </p>
               </div>
               <div class="menu-item">
-                <img src="./images/raspberry_cupcake.jpg" alt="Raspberry Cupcake">
+                <img
+                  src="./images/raspberry_cupcake.jpg"
+                  alt="Raspberry Cupcake"
+                />
                 <p>Raspberry Cupcake</p>
                 <div class="dietary-box">
-                <p class="dietary">
-                  <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
-                  Gluten Free</p>
-                <p class="dietary">
-                  <i class="fa-solid fa-leaf"></i>
-                    Vegan</p>
-                  </div>
+                  <p class="dietary">
+                    <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                    Gluten Free
+                  </p>
+                  <p class="dietary">
+                    <i class="fa-solid fa-leaf"></i>
+                    Vegan
+                  </p>
+                </div>
               </div>
               <div class="menu-item">
-                <img src="./images/vanilla_cake.jpg" alt="Vanilla Cake">
+                <img src="./images/vanilla_cake.jpg" alt="Vanilla Cake" />
                 <p>Vanilla Cake</p>
                 <p class="dietary">
                   <i class="fa-solid fa-egg"></i>
-                  Contains Eggs</p>
+                  Contains Eggs
+                </p>
               </div>
               <div class="menu-item">
-                <img src="./images/cheesecake.jpg" alt="Cheesecake">
+                <img src="./images/cheesecake.jpg" alt="Cheesecake" />
                 <p>Cheesecake</p>
                 <div class="dietary-box">
-                <p class="dietary">
-                  <i class="fa-solid fa-egg"></i>
-                  Contains Eggs</p>
-                <p class="dietary">
-                  <i class="fa-solid fa-cow"></i>
-                    Contains Dairy</p>
+                  <p class="dietary">
+                    <i class="fa-solid fa-egg"></i>
+                    Contains Eggs
+                  </p>
+                  <p class="dietary">
+                    <i class="fa-solid fa-cow"></i>
+                    Contains Dairy
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="menu">
+          <div class="dropdown">
+            <input
+              type="checkbox"
+              id="dropdown-drinks-toggle"
+              class="dropdown-drinks-toggle"
+            />
+            <label for="dropdown-drinks-toggle" class="dropdown-label">
+              <span class="dropdown-icon">&#9654;</span>Drinks
+            </label>
+            <div class="dropdown-drinks-content">
+              <div class="menu-item">
+                <img src="./images/coffee.jpg" alt="Flat White" />
+                <p>Flat White</p>
+                <p class="dietary">
+                  <i class="fa-solid fa-leaf"></i>
+                  Vegan Options Available
+                </p>
+              </div>
+              <div class="menu-item">
+                <img src="./images/green_smoothie.jpg" alt="Green Smoothie" />
+                <p>Green Smoothie</p>
+                <p class="dietary">
+                  <i class="fa-solid fa-leaf"></i>
+                  Vegan Options Available
+                </p>
+              </div>
+              <div class="menu-item">
+                <img src="./images/peanut_smoothie.jpg" alt="Peanut Smoothie" />
+                <p>Peanut Butter Smoothie</p>
+                <div class="dietary-box-pbs">
+                  <p class="dietary">
+                    <i class="fa-solid fa-leaf"></i>
+                    Vegan Options Available
+                  </p>
+                  <p class="dietary">
+                    <i class="fa-solid fa-hand-dots"></i>
+                    Contains Nuts
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>

@@ -89,7 +89,7 @@ header .navbar__link {
 }
 
 /* Dropdown Container */
-.food .dropdown {
+.menu .dropdown {
   background-color: #ebc9c4;
   border: 1px solid #ebc9c4;
   margin: 10px 0;
@@ -98,7 +98,11 @@ header .navbar__link {
 }
 
 /* Hidden Checkbox */
-.dropdown-toggle {
+.dropdown-food-toggle {
+  display: none;
+}
+
+.dropdown-drinks-toggle {
   display: none;
 }
 
@@ -120,13 +124,14 @@ header .navbar__link {
   transition: transform 0.3s ease;
 }
 
+/* FOOD */
 /* Rotate the icon when open */
-.dropdown-toggle:checked + .dropdown-label .dropdown-icon {
+.dropdown-food-toggle:checked + .dropdown-label .dropdown-icon {
   transform: rotate(90deg);
 }
 
 /* Dropdown Content */
-.dropdown-content {
+.dropdown-food-content {
   display: none;
   padding: 20px;
   height: 1000px;
@@ -136,14 +141,7 @@ header .navbar__link {
   padding: 5px;
   flex-wrap: wrap;
 }
-
-/* Show Content When Checkbox is Checked */
-.dropdown-toggle:checked ~ .dropdown-content {
-  display: flex;
-}
-
-/* Menu Items */
-.menu-item {
+.dropdown-food-content .menu-item {
   border: 1px solid #ebc9c4;
   background-color: #ebc9c4;
   padding: 15px;
@@ -155,6 +153,47 @@ header .navbar__link {
   color: #404040;
   box-sizing: border-box;
   margin: auto;
+}
+
+/* Show Content When Checkbox is Checked */
+.dropdown-food-toggle:checked ~ .dropdown-food-content {
+  display: flex;
+}
+
+/* DRINKS */
+/* Rotate the icon when open */
+.dropdown-drinks-toggle:checked + .dropdown-label .dropdown-icon {
+  transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.dropdown-drinks-content {
+  display: none;
+  padding: 20px;
+  height: 500px;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-top: auto;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.dropdown-drinks-content .menu-item {
+  border: 1px solid #ebc9c4;
+  background-color: #ebc9c4;
+  padding: 15px;
+  text-align: center;
+  width: 30%;
+  height: 90%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #404040;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+/* Show Content When Checkbox is Checked */
+.dropdown-drinks-toggle:checked ~ .dropdown-drinks-content {
+  display: flex;
 }
 
 .menu-item img {
@@ -170,33 +209,45 @@ header .navbar__link {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .dietary .fa-leaf {
   color: #689572;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .dietary .fa-wheat-awn-circle-exclamation {
   color: #689572;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .dietary .fa-egg {
   color: #689572;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .dietary .fa-cow {
   color: #689572;
-  margin-right: 8px;
+  margin-right: 4px;
+}
+
+.dietary .fa-hand-dots {
+  color: #689572;
+  margin-right: 4px;
 }
 
 .dietary-box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.dietary-box-pbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: smaller;
 }
 
 /*# sourceMappingURL=style.css.map */
