@@ -1,0 +1,54 @@
+@use "../partials/colors";
+
+.block-3 {
+  font-family: "Rammetto One", sans-serif;
+  text-align: center;
+  color: colors.$white;
+  font-size: x-large;
+  background-color: colors.$peach-amber;
+  height: 700px;
+  padding: 30px;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  height: 35%;
+  width: 45%;
+  border: 3px solid colors.$white;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.review-quote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: smaller;
+  color: colors.$bauhaus;
+}
+
+.customer-det {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: medium;
+  color: colors.$bauhaus;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 1.25em;
+  padding: 10px;
+}

@@ -84,11 +84,6 @@ header .navbar__link {
   width: 50vw;
 }
 
-body {
-  margin: 0; /* Removes default margin */
-  padding: 0;
-}
-
 .block-2 {
   padding: 20px;
   font-family: "Rammetto One", sans-serif;
@@ -210,7 +205,6 @@ body {
   height: 60%;
   margin-bottom: 10px;
 }
-
 .menu-item .dietary {
   font-size: 0.75em;
   font-weight: 100;
@@ -226,22 +220,18 @@ body {
   color: #689572;
   margin-right: 4px;
 }
-
 .dietary .fa-wheat-awn-circle-exclamation {
   color: #689572;
   margin-right: 4px;
 }
-
 .dietary .fa-egg {
   color: #689572;
   margin-right: 4px;
 }
-
 .dietary .fa-cow {
   color: #689572;
   margin-right: 4px;
 }
-
 .dietary .fa-hand-dots {
   color: #689572;
   margin-right: 4px;
@@ -316,7 +306,7 @@ body {
 .copyright-container {
   height: 100px;
   width: 100vw;
-  background-color: #689572;
+  background-color: #82a289;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -340,11 +330,15 @@ body {
   display: flex;
   align-items: center;
 }
-
-.fa-square-instagram {
+.instagram .fa-square-instagram {
   font-size: 3em;
   padding-right: 100px;
   color: #ffffff;
+}
+
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

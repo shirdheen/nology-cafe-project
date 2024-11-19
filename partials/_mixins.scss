@@ -1,0 +1,37 @@
+@use "./colors";
+
+@mixin dropdown-content($content-height) {
+  display: none;
+  padding: 20px;
+  height: $content-height;
+  background-color: colors.$white;
+  border-top: 1px solid colors.$white;
+  margin-top: auto;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+@mixin menu-item($menu-width, $menu-height) {
+  border: 1px solid colors.$fairy-floss;
+  background-color: colors.$fairy-floss;
+  padding: 15px;
+  text-align: center;
+  width: $menu-width;
+  height: $menu-height;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: colors.$bauhaus;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+@mixin icon {
+  color: colors.$spring-forest;
+  margin-right: 4px;
+}
+
+@mixin dietary-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

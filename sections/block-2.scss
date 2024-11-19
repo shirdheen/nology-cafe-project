@@ -1,0 +1,133 @@
+@use "../partials/mixins";
+@use "../partials/colors";
+
+.block-2 {
+  padding: 20px;
+  font-family: "Rammetto One", sans-serif;
+  text-align: center;
+  color: colors.$peach-amber;
+  font-size: x-large;
+}
+
+/* Dropdown Container */
+.menu {
+  .dropdown {
+    background-color: colors.$fairy-floss;
+    border: 1px solid colors.$fairy-floss;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+/* Hidden Checkbox */
+.dropdown-food-toggle {
+  display: none;
+}
+
+.dropdown-drinks-toggle {
+  display: none;
+}
+
+/* Label for Dropdown */
+.dropdown-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: colors.$bauhaus;
+  font-weight: bold;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+/* FOOD */
+
+/* Rotate the icon when open */
+.dropdown-food-toggle:checked + .dropdown-label .dropdown-icon {
+  transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.dropdown-food-content {
+  @include mixins.dropdown-content(1000px);
+  .menu-item {
+    @include mixins.menu-item(30%, 45%);
+  }
+}
+
+/* Show Content When Checkbox is Checked */
+.dropdown-food-toggle:checked ~ .dropdown-food-content {
+  display: flex;
+}
+
+/* DRINKS */
+
+/* Rotate the icon when open */
+.dropdown-drinks-toggle:checked + .dropdown-label .dropdown-icon {
+  transform: rotate(90deg);
+}
+
+/* Dropdown Content */
+.dropdown-drinks-content {
+  @include mixins.dropdown-content(500px);
+  .menu-item {
+    @include mixins.menu-item(30%, 90%);
+  }
+}
+
+/* Show Content When Checkbox is Checked */
+.dropdown-drinks-toggle:checked ~ .dropdown-drinks-content {
+  display: flex;
+}
+
+.menu-item {
+  img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+  }
+  .dietary {
+    font-size: 0.75em;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+.dietary {
+  .fa-leaf {
+    @include mixins.icon;
+  }
+  .fa-wheat-awn-circle-exclamation {
+    @include mixins.icon;
+  }
+  .fa-egg {
+    @include mixins.icon;
+  }
+  .fa-cow {
+    @include mixins.icon;
+  }
+  .fa-hand-dots {
+    @include mixins.icon;
+  }
+}
+
+.dietary-box {
+  @include mixins.dietary-box;
+}
+
+.dietary-box-pbs {
+  @include mixins.dietary-box;
+  font-size: smaller;
+}
