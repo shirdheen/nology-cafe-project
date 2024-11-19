@@ -9,7 +9,7 @@ header {
 }
 header .fa-mug-hot {
   color: #faa196;
-  font-size: 2.5em;
+  font-size: 3em;
   padding: 15px;
   margin-left: 50px;
 }
@@ -31,10 +31,85 @@ header .navbar__link {
   padding: 15px;
 }
 
-.title-card {
-  height: 300px;
+.block-1 {
+  display: flex;
+  flex-direction: row;
+}
+.block-1 .title-card {
+  height: 500px;
   width: 50vw;
   background-color: #689572;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+.block-1 .title-card__text h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin: 10px;
+}
+.block-1 .title-card__text h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 1.75em;
+  color: #ffffff;
+  margin: 10px;
+}
+.block-1 .title-card button {
+  background-color: #689572;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+  padding: 10px 30px;
+  width: fit-content;
+  height: fit-content;
+}
+.block-1 .title-card button:hover {
+  transform: scale(1.05);
+}
+.block-1 .title-image img {
+  height: 500px;
+  width: 50vw;
+}
+
+.block-2 {
+  font-family: "Rammetto One", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  color: #faa196;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block-2 .food {
+  color: #404040;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  height: 50px;
+  width: 90vw;
+  background-color: #ebc9c4;
+}
+.block-2 .food .dropdown__checkbox {
+  display: none;
+}
+.block-2 .food .dropdown__content {
+  height: 300px;
+  width: 33vw;
+  background-color: #ebc9c4;
+  display: flex;
+  flex-direction: column;
+}
+.block-2 .food .dropdown__content--item img {
+  height: 200px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.sass.map */
