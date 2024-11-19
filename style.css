@@ -1,8 +1,3 @@
-body {
-  margin: 0; /* Removes default margin */
-  padding: 0;
-}
-
 header {
   height: 100px;
   width: 100vw;
@@ -80,13 +75,18 @@ header .navbar__link {
 .block-1 .title-card button:hover {
   transform: scale(1.05);
 }
-.block-1 button a {
+.block-1 .title-card button a {
   text-decoration: none;
   color: inherit;
 }
 .block-1 .title-image img {
   height: 500px;
   width: 50vw;
+}
+
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0;
 }
 
 .block-2 {

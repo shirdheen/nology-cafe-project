@@ -1,0 +1,55 @@
+.block-1 {
+  display: flex;
+  flex-direction: row;
+  .title-card {
+    height: 500px;
+    width: 50vw;
+    background-color: #689572;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    box-sizing: border-box;
+    &__text {
+      h1 {
+        font-family: "Rammetto One", sans-serif;
+        font-size: 2.5em;
+        color: #ffffff;
+        margin: 10px;
+      }
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: lighter;
+        font-size: 1.75em;
+        color: #ffffff;
+        margin: 10px;
+      }
+    }
+    button {
+      background-color: #689572;
+      border: 2px solid #ffffff;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.25em;
+      margin: 10px;
+      transition: 0.3s ease-in-out;
+      padding: 10px 30px;
+      width: fit-content;
+      height: fit-content;
+      &:hover {
+        transform: scale(1.05);
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  .title-image img {
+    height: 500px;
+    width: 50vw;
+  }
+}
