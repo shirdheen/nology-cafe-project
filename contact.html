@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form>
+      <div>
+        <label class="labels" for="name-input">Name</label>
+        <br />
+        <input class="name" id="name-input" type="text" required />
+      </div>
+      <div>
+        <label class="labels" for="email-input">Email</label>
+        <br />
+        <input
+          id="email-input"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+      </div>
+      <div>
+        <label class="labels" for="category-input">Category</label>
+        <br />
+        <select id="category-input" class="category-select" required>
+          <option disabled selected>Please select a topic</option>
+          <option value="bookings">Bookings</option>
+          <option value="online-orders">Online orders</option>
+          <option value="complaints">Complaints</option>
+        </select>
+      </div>
+      <div>
+        <label class="labels" for="question-input">Question</label>
+        <br />
+        <textarea id="question-input">Please enter your question here</textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

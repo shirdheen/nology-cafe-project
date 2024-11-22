@@ -1,0 +1,80 @@
+h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 2.5em;
+  color: #689572;
+  text-align: center;
+}
+
+.labels {
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+  font-size: 1.5em;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+form {
+  height: 600px;
+  width: 100vw;
+  background-color: #ebc9c4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.category-select {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #689572;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 10px 30px;
+  border: 2px solid #689572;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #557d5b;
+  border-color: #557d5b;
+  transform: scale(1.05);
+}
