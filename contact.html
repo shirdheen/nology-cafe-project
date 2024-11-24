@@ -38,7 +38,9 @@
         <label class="labels" for="category-input">Category</label>
         <br />
         <select id="category-input" class="category-select" required>
-          <option disabled selected>Please select a topic</option>
+          <option disabled selected value="default">
+            Please select a topic
+          </option>
           <option value="bookings">Bookings</option>
           <option value="online-orders">Online orders</option>
           <option value="complaints">Complaints</option>
@@ -47,7 +49,10 @@
       <div>
         <label class="labels" for="question-input">Question</label>
         <br />
-        <textarea id="question-input">Please enter your question here</textarea>
+        <textarea
+          id="question-input"
+          placeholder="Please enter your question here"
+        ></textarea>
       </div>
       <div>
         <button type="submit">Submit</button>

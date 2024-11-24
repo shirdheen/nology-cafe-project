@@ -19,7 +19,8 @@
   align-items: center;
   .fa-mug-hot {
     font-size: 1.5em;
-    padding-left: 100px;
+    padding-right: 100px;
+    transform: scaleX(-1);
   }
 }
 
